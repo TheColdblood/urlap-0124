@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap gyakorlás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mozi</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <!--kereten lévő szöveg-->
+            <legend>Néző adatai:</legend>
+
+            <!-- label form és input id egyezzen meg -->
+            <label for="neve">Név: </label>
+            <input type="text" id="neve" name="nev" value="Peter Griffin" size="10">
+            <br>
+            
+            <label for="kedvenc">Kedvenc film: </label>
+            <input type="text" id="kedvenc" name="film" value="Velocipastor" size="20">
+            <br>
+
+            <label for="filmek_szama">Filmek száma/hét:</label>
+            <input type="range" id="filmek_szama" name="film_szam" oninput="this.form.f_sz.value=this.value" max="20">
+
+            <input type="number" name="f_sz" size="6" oninput="this.form.film_szam.value=this.value" max="20">
+            <br>
+
+            <input type="submit" value="Küldés">
+        </fieldset>
+
+
+
+
+    <h5>peter time</h5>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" alt="peter">
+    </form>
+</body>
+</html>
